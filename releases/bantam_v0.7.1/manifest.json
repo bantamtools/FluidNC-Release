@@ -6,12 +6,12 @@
   "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
   "images": {
     "esp32-wifi-firmware": {
-      "size": 1779952,
+      "size": 1780064,
       "offset": "0x10000",
       "path": "esp32/wifi/firmware.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "6ca6c91e7eaf0c7488dd3daf6bde62223dc8833adc29338cb72b8054dfd9e0e3"
+        "value": "830dd152fcfb0fd70a590ed704a93f589cc640ba93e6d84ce7ad4bd0671e2b1c"
       }
     },
     "esp32-wifi-4m-filesystem": {
@@ -20,7 +20,7 @@
       "path": "esp32/wifi/4m/littlefs.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "c1a2ec4f9b9f2bf2624f68ba603365db08028cd5c071b5077e5dff1de6867558"
+        "value": "6ae357c004ea349fc3995eda31e4cb833739a2eec9362b51b891598dd37133a6"
       }
     },
     "esp32-4m-partitions": {
@@ -51,21 +51,21 @@
       }
     },
     "esp32-bt-firmware": {
-      "size": 1774192,
+      "size": 1774288,
       "offset": "0x10000",
       "path": "esp32/bt/firmware.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "dcef3a11abac9fa0f963acdd4299bd9b346a14e75573b541bc2470d46631b6c5"
+        "value": "17f9fe52baf38ec4b8c7882700b4b62b6808a3914bb9d90fce6fbd1b25330d79"
       }
     },
     "esp32-noradio-firmware": {
-      "size": 1027472,
+      "size": 1027584,
       "offset": "0x10000",
       "path": "esp32/noradio/firmware.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "efab2a88c4e216bcb3b6fb84dcdf391362b9f7291b7eb932c8d00ef762ec7d0f"
+        "value": "f7394f8c7a1231087c5e89c7d765d6705089b85a34af5592fa52f634007a458f"
       }
     },
     "esp32-wifi_s3-firmware": {
@@ -83,7 +83,7 @@
       "path": "esp32/wifi_s3/4m/littlefs.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "fdb3e9c709b30301694a7742e8f31000a7d00a25a33ee1ee437bd859ffe61260"
+        "value": "ec7919a343e70de1490cfd349b8770c40214d885736343c5bcdddee27b9da15e"
       }
     },
     "esp32-4m_s3-partitions": {
