@@ -20,7 +20,7 @@
       "path": "esp32/wifi_s3/4m/littlefs.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "8978b8244119b828b10d5f1eabc757b100b4f4f0029a5edbe18ea99d72a7dafa"
+        "value": "303a01e7590c34a3b116601f5b0003ad1fb854590656598b0d217ae5c1c439ed"
       }
     },
     "esp32-4m_s3-partitions": {
