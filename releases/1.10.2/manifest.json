@@ -1,0 +1,263 @@
+{
+  "name": "FluidNC",
+  "version": "1.10.2",
+  "source_url": "https://github.com/bdring/FluidNC/tree/1.10.2",
+  "release_url": "https://github.com/bdring/FluidNC/releases/tag/1.10.2",
+  "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
+  "images": {
+    "esp32-wifi_s3-2436-firmware": {
+      "size": 1796224,
+      "offset": "0x10000",
+      "path": "esp32/wifi_s3-2436/firmware.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "209da226fd7406586c05e9d21cb43b86c33843e34f7a661bad72b89b87e25d29"
+      }
+    },
+    "esp32-wifi_s3-2436-4m-filesystem": {
+      "size": 2031616,
+      "offset": "0x3d0000",
+      "path": "esp32/wifi_s3-2436/4m/littlefs.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "0c9173b5d850ef84d64fa536e94006557b11507ef744886e96ca3e3ab57865a3"
+      }
+    },
+    "esp32-wifi_s3-2436-4m_s3-partitions": {
+      "size": 3072,
+      "offset": "0x8000",
+      "path": "esp32/4m/partitions.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a67752ec6219ff63f32ee2416bfa0005ed34d0e6dba59a36eba21f6c666319c5"
+      }
+    },
+    "esp32-wifi_s3-2436_s3-bootloader": {
+      "size": 15104,
+      "offset": "0x1000",
+      "path": "esp32/bootloader.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "175df8bcabaee9bb1027381153f0398226266162a32c2a04c1cf0253dbe87987"
+      }
+    },
+    "esp32-wifi_s3-2436_s3-bootapp": {
+      "size": 8192,
+      "offset": "0xe000",
+      "path": "esp32/boot_app0.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    },
+    "esp32-wifi_s3-1824-firmware": {
+      "size": 1796224,
+      "offset": "0x10000",
+      "path": "esp32/wifi_s3-1824/firmware.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "0bc6a0400b589e7c23d87594bdeae9290004e4ea9cff623d8d8fe293e7f2343b"
+      }
+    },
+    "esp32-wifi_s3-1824-4m-filesystem": {
+      "size": 2031616,
+      "offset": "0x3d0000",
+      "path": "esp32/wifi_s3-1824/4m/littlefs.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a48ab8a39edec05f5ab8b785dfb24edfb158ccf9deb1ae7457a0d19b0c2ea3de"
+      }
+    },
+    "esp32-wifi_s3-1824-4m_s3-partitions": {
+      "size": 3072,
+      "offset": "0x8000",
+      "path": "esp32/4m/partitions.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a67752ec6219ff63f32ee2416bfa0005ed34d0e6dba59a36eba21f6c666319c5"
+      }
+    },
+    "esp32-wifi_s3-1824_s3-bootloader": {
+      "size": 15104,
+      "offset": "0x1000",
+      "path": "esp32/bootloader.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "175df8bcabaee9bb1027381153f0398226266162a32c2a04c1cf0253dbe87987"
+      }
+    },
+    "esp32-wifi_s3-1824_s3-bootapp": {
+      "size": 8192,
+      "offset": "0xe000",
+      "path": "esp32/boot_app0.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    },
+    "esp32-wifi_s3-firmware": {
+      "size": 1796224,
+      "offset": "0x10000",
+      "path": "esp32/wifi_s3/firmware.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a703de568faa638dc6416a0285e8285fb4a8844f0a55d45cd9e3a89e351b0bae"
+      }
+    },
+    "esp32-wifi_s3-4m-filesystem": {
+      "size": 2031616,
+      "offset": "0x3d0000",
+      "path": "esp32/wifi_s3/4m/littlefs.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "186d0afc5ede0aba2c6e00d12345529d95f1d4725ce2c6b225adc320c21a7c0e"
+      }
+    },
+    "esp32-wifi_s3-4m_s3-partitions": {
+      "size": 3072,
+      "offset": "0x8000",
+      "path": "esp32/4m/partitions.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a67752ec6219ff63f32ee2416bfa0005ed34d0e6dba59a36eba21f6c666319c5"
+      }
+    },
+    "esp32-wifi_s3_s3-bootloader": {
+      "size": 15104,
+      "offset": "0x1000",
+      "path": "esp32/bootloader.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "175df8bcabaee9bb1027381153f0398226266162a32c2a04c1cf0253dbe87987"
+      }
+    },
+    "esp32-wifi_s3_s3-bootapp": {
+      "size": 8192,
+      "offset": "0xe000",
+      "path": "esp32/boot_app0.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    }
+  },
+  "installable": {
+    "name": "installable",
+    "description": "Things you can install",
+    "choice-name": "Processor type",
+    "choices": [
+      {
+        "name": "esp32",
+        "description": "ESP32-WROOM",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "wifi_s3",
+            "description": "Supports WiFi and WebUI on the esp32_s3",
+            "choice-name": "Installation type",
+            "choices": [
+              {
+                "name": "fresh-install",
+                "description": "Complete FluidNC installation, erasing all previous data",
+                "erase": true,
+                "images": [
+                  "esp32-wifi_s3-4m_s3-partitions",
+                  "esp32-wifi_s3_s3-bootloader",
+                  "esp32-wifi_s3_s3-bootapp",
+                  "esp32-wifi_s3-firmware",
+                  "esp32-wifi_s3-4m-filesystem"
+                ]
+              },
+              {
+                "name": "firmware-update",
+                "description": "Update FluidNC to latest firmware version, preserving previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-firmware"
+                ]
+              },
+              {
+                "name": "filesystem-update",
+                "description": "Update FluidNC filesystem only, erasing previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-4m-filesystem"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wifi_s3-2436",
+            "description": "Supports WiFi and WebUI on the esp32_s3",
+            "choice-name": "Installation type",
+            "choices": [
+              {
+                "name": "fresh-install",
+                "description": "Complete FluidNC installation, erasing all previous data",
+                "erase": true,
+                "images": [
+                  "esp32-wifi_s3-2436-4m_s3-partitions",
+                  "esp32-wifi_s3-2436_s3-bootloader",
+                  "esp32-wifi_s3-2436_s3-bootapp",
+                  "esp32-wifi_s3-2436-firmware",
+                  "esp32-wifi_s3-2436-4m-filesystem"
+                ]
+              },
+              {
+                "name": "firmware-update",
+                "description": "Update FluidNC to latest firmware version, preserving previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-2436-firmware"
+                ]
+              },
+              {
+                "name": "filesystem-update",
+                "description": "Update FluidNC filesystem only, erasing previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-2436-4m-filesystem"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wifi_s3-1824",
+            "description": "Supports WiFi and WebUI on the esp32_s3",
+            "choice-name": "Installation type",
+            "choices": [
+              {
+                "name": "fresh-install",
+                "description": "Complete FluidNC installation, erasing all previous data",
+                "erase": true,
+                "images": [
+                  "esp32-wifi_s3-1824-4m_s3-partitions",
+                  "esp32-wifi_s3-1824_s3-bootloader",
+                  "esp32-wifi_s3-1824_s3-bootapp",
+                  "esp32-wifi_s3-1824-firmware",
+                  "esp32-wifi_s3-1824-4m-filesystem"
+                ]
+              },
+              {
+                "name": "firmware-update",
+                "description": "Update FluidNC to latest firmware version, preserving previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-1824-firmware"
+                ]
+              },
+              {
+                "name": "filesystem-update",
+                "description": "Update FluidNC filesystem only, erasing previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-1824-4m-filesystem"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
