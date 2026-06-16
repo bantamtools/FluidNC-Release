@@ -20,7 +20,7 @@
       "path": "esp32/wifi_s3/4m/littlefs.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "384fd590e5629aee7fe8fd227e72206de1075562fa5de7d5dee97eff7c0409da"
+        "value": "4e076115e9848e7d9d9e7807602f1dbd3b84637ed65208e13d319699ad1a3373"
       }
     },
     "esp32-wifi_s3-4m_s3-partitions": {
@@ -65,7 +65,7 @@
       "path": "esp32/wifi_s3_usb-otg/4m/littlefs.bin",
       "signature": {
         "algorithm": "SHA2-256",
-        "value": "aea06eb739de83fd313ea80cbfc745a82057b4f743f01ab9b874168b7e9ef4c4"
+        "value": "fc4ec11ce1241144d817c4b6326a0bfdbc35dfdce70c3c178ae45052255d592b"
       }
     },
     "esp32-wifi_s3_usb-otg-4m_s3-partitions": {
