@@ -1,0 +1,241 @@
+{
+  "name": "FluidNC",
+  "version": "2.10.15",
+  "source_url": "https://github.com/bdring/FluidNC/tree/v2.10.15",
+  "release_url": "https://github.com/bdring/FluidNC/releases/tag/v2.10.15",
+  "funding_url": "https://www.paypal.com/donate/?hosted_button_id=8DYLB6ZYYDG7Y",
+  "images": {
+    "esp32-wifi_s3-firmware": {
+      "size": 1845808,
+      "offset": "0x10000",
+      "path": "esp32/wifi_s3/firmware.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "d88c969ae716e58b74d15e667a75cbe27f3b8b9edacd4341c9f4c9c9b91103b8"
+      }
+    },
+    "esp32-wifi_s3-4m-filesystem": {
+      "size": 2031616,
+      "offset": "0x3d0000",
+      "path": "esp32/wifi_s3/4m/littlefs.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "8be9e25c6890b277ca8c20cfd40501b8f822566472c042111c61a9dbbf6c22e6"
+      }
+    },
+    "esp32-wifi_s3-4m_s3-partitions": {
+      "size": 3072,
+      "offset": "0x8000",
+      "path": "esp32/4m/partitions.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a67752ec6219ff63f32ee2416bfa0005ed34d0e6dba59a36eba21f6c666319c5"
+      }
+    },
+    "esp32-wifi_s3_s3-bootloader": {
+      "size": 15104,
+      "offset": "0x1000",
+      "path": "esp32/bootloader.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "175df8bcabaee9bb1027381153f0398226266162a32c2a04c1cf0253dbe87987"
+      }
+    },
+    "esp32-wifi_s3_s3-bootapp": {
+      "size": 8192,
+      "offset": "0xe000",
+      "path": "esp32/boot_app0.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    },
+    "esp32-wifi_s3_usb-otg-firmware": {
+      "size": 1871984,
+      "offset": "0x10000",
+      "path": "esp32/wifi_s3_usb-otg/firmware.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a30eded57ca1accb7bbea390116f01406a8dceff580f1f9ee1c6cf3e3c391123"
+      }
+    },
+    "esp32-wifi_s3_usb-otg-4m-filesystem": {
+      "size": 2031616,
+      "offset": "0x3d0000",
+      "path": "esp32/wifi_s3_usb-otg/4m/littlefs.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "18bd9e45d014e19c110ad20af6badbe9039e3bf2ae587aecff2d6a5cdf98cf67"
+      }
+    },
+    "esp32-wifi_s3_usb-otg-4m_s3-partitions": {
+      "size": 3072,
+      "offset": "0x8000",
+      "path": "esp32/4m/partitions.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "a67752ec6219ff63f32ee2416bfa0005ed34d0e6dba59a36eba21f6c666319c5"
+      }
+    },
+    "esp32-wifi_s3_usb-otg_s3-bootloader": {
+      "size": 15104,
+      "offset": "0x1000",
+      "path": "esp32/bootloader.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "175df8bcabaee9bb1027381153f0398226266162a32c2a04c1cf0253dbe87987"
+      }
+    },
+    "esp32-wifi_s3_usb-otg_s3-bootapp": {
+      "size": 8192,
+      "offset": "0xe000",
+      "path": "esp32/boot_app0.bin",
+      "signature": {
+        "algorithm": "SHA2-256",
+        "value": "f94c5d786a7a8fab06ac5d10e33bf37711a6697636dc037559ea19cc410a17f0"
+      }
+    }
+  },
+  "installable": {
+    "name": "installable",
+    "description": "Things you can install",
+    "choice-name": "Processor type",
+    "choices": [
+      {
+        "name": "esp32",
+        "description": "ESP32-WROOM",
+        "choice-name": "Firmware variant",
+        "choices": [
+          {
+            "name": "wifi_s3",
+            "description": "Supports WiFi and WebUI on the esp32_s3",
+            "choice-name": "Installation type",
+            "choices": [
+              {
+                "name": "fresh-install",
+                "description": "Complete FluidNC installation, erasing all previous data",
+                "erase": true,
+                "images": [
+                  "esp32-wifi_s3-4m_s3-partitions",
+                  "esp32-wifi_s3_s3-bootloader",
+                  "esp32-wifi_s3_s3-bootapp",
+                  "esp32-wifi_s3-firmware",
+                  "esp32-wifi_s3-4m-filesystem"
+                ]
+              },
+              {
+                "name": "firmware-update",
+                "description": "Update FluidNC to latest firmware version, preserving previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-firmware"
+                ]
+              },
+              {
+                "name": "filesystem-update",
+                "description": "Update FluidNC filesystem only, erasing previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3-4m-filesystem"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "wifi_s3_usb-otg",
+            "description": "Supports WiFi and WebUI on the esp32_s3 with runtime USB configuration",
+            "choice-name": "Installation type",
+            "choices": [
+              {
+                "name": "fresh-install",
+                "description": "Complete FluidNC installation, erasing all previous data",
+                "erase": true,
+                "images": [
+                  "esp32-wifi_s3_usb-otg-4m_s3-partitions",
+                  "esp32-wifi_s3_usb-otg_s3-bootloader",
+                  "esp32-wifi_s3_usb-otg_s3-bootapp",
+                  "esp32-wifi_s3_usb-otg-firmware",
+                  "esp32-wifi_s3_usb-otg-4m-filesystem"
+                ]
+              },
+              {
+                "name": "firmware-update",
+                "description": "Update FluidNC to latest firmware version, preserving previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3_usb-otg-firmware"
+                ]
+              },
+              {
+                "name": "filesystem-update",
+                "description": "Update FluidNC filesystem only, erasing previous filesystem data.",
+                "erase": false,
+                "images": [
+                  "esp32-wifi_s3_usb-otg-4m-filesystem"
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "shared_data_commit": "c379b636a0b2369f465bfa20c6b2ac8839378e8d",
+  "default_config": "artframe-2436-multi-rooster-d",
+  "configs": [
+    {
+      "key": "artframe-1824-multi-rooster-b",
+      "file": "ArtFrame1824.yaml",
+      "sha256": "6457dd0df484d5be3089674d435b48cc5c8dff94831a29db15b040959e16ddf0",
+      "meta": "B1.2.0"
+    },
+    {
+      "key": "artframe-1824-multi-rooster-d",
+      "file": "ArtFrame1824-RoosterD.yaml",
+      "sha256": "051649fcf2159206e0e07810a970a5273f427dea51326b7d803146d6b0a7dead",
+      "meta": "1.2.0"
+    },
+    {
+      "key": "artframe-2436-multi-rooster-b",
+      "file": "ArtFrame2436.yaml",
+      "sha256": "386f1ba0c8fe76fa27ed171aa17a72dfce48f635dcab9bfa381c65b07da2057f",
+      "meta": "B1.2.0"
+    },
+    {
+      "key": "artframe-2436-multi-rooster-d",
+      "file": "ArtFrame2436-RoosterD.yaml",
+      "sha256": "3982b0fd2cf71cae194eb2133755c965da05b8cb29aa7802838e0015b7672383",
+      "meta": "1.2.0"
+    },
+    {
+      "key": "artframe-2472-multi-rooster-b",
+      "file": "ArtFrame2472.yaml",
+      "sha256": "2d41c2caeece975973f0d0654eaa937fdcaf852d786cbc3efebb9f8a4f47576b",
+      "meta": "B1.2.0"
+    },
+    {
+      "key": "artframe-2472-multi-rooster-d",
+      "file": "ArtFrame2472-RoosterD.yaml",
+      "sha256": "216d213fb1d7c8d8f53a1898f426dccc1131a0cbe03655031af63f9e77d22a76",
+      "meta": "1.2.0"
+    },
+    {
+      "key": "eggbot-hen-d",
+      "file": "EggBot.yaml",
+      "sha256": "6b2209da401057b33b0732c31faba8a1c3007c515e33b191fdccdb6f3c359eb3",
+      "meta": "1.2.0"
+    },
+    {
+      "key": "watercolorbot-hen-d",
+      "file": "wcb.yaml",
+      "sha256": "f4ff8d3849bac9cb595e0392a9602f6619799ea3933f8e20f949dbb043b2c67d",
+      "meta": "1.2.0"
+    },
+    {
+      "key": "handwriter-85-hen-d",
+      "file": "HandWriter_Config.yaml",
+      "sha256": "4504955671944c679b406b3a476d971c48c18cf339b35ed72474fa26be30a8eb",
+      "meta": "1.0.8"
+    }
+  ]
+}
